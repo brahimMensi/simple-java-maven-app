@@ -10,7 +10,7 @@ pipeline {
 
     stage('Test') {
       steps {
-        sh 'sh \'sh `mvn test`'
+        sh 'sh `mvn test`'
       }
     }
 
