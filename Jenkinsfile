@@ -3,6 +3,7 @@ pipeline {
   stages {
     stage('Build') {
       steps {
+        sh 'sh `mvn --version`'
         echo 'Build Demo Application'
         sh 'sh `mvn  compile`'
       }
