@@ -3,6 +3,7 @@ pipeline {
   stages {
     stage('Build') {
       steps {
+        sh 'sh \'pwd\''
         echo 'Build Demo Application'
         sh 'sh \'mvn compile\''
       }
