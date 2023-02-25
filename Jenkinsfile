@@ -8,5 +8,17 @@ pipeline {
       }
     }
 
+    stage('Test') {
+      steps {
+        sh 'sh \'sh `mvn test`'
+      }
+    }
+
+    stage('Deliver') {
+      steps {
+        sh 'sh `./jenkins/scripts/deliver.sh`'
+      }
+    }
+
   }
 }
